@@ -1,5 +1,5 @@
 import React from 'react';
-import { Check, Trash2 } from 'lucide-react';
+import { Check, Circle, Trash2 } from 'lucide-react';
 
 interface Todo {
   id: number;
@@ -22,7 +22,7 @@ const TodoItem: React.FC<TodoItemProps> = ({ todo, onToggle, onDelete }) => {
           todo.completed ? 'bg-custom-mint text-white' : 'bg-custom-cream'
         }`}
       >
-        <Check size={16} />
+        {todo.completed ? <Check size={16} /> : <Circle size={16} />}
       </button>
       <span className={`flex-grow ${todo.completed ? 'line-through text-custom-pink' : ''}`}>
         {todo.text}

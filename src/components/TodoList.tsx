@@ -30,13 +30,13 @@ const TodoList: React.FC = () => {
   };
 
   return (
-    <div>
+    <div className="text-[#B0E0E6]">
       <div className="flex mb-4">
         <input
           type="text"
           value={newTodo}
           onChange={(e) => setNewTodo(e.target.value)}
-          className="flex-grow px-3 py-2 border rounded-l-md focus:outline-none focus:ring-2 focus:ring-custom-pink"
+          className="flex-grow px-3 py-2 border rounded-l-md focus:outline-none focus:ring-2 focus:ring-custom-pink text-[#B0E0E6]"
           placeholder="Add a new todo..."
         />
         <button

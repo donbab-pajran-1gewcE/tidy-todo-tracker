@@ -24,7 +24,7 @@ const TodoItem: React.FC<TodoItemProps> = ({ todo, onToggle, onDelete }) => {
       >
         <Check size={16} />
       </button>
-      <span className={`flex-grow ${todo.completed ? 'line-through text-custom-pink' : ''}`}>
+      <span className={`flex-grow ${todo.completed ? 'line-through text-custom-pink' : 'text-[#B0E0E6]'}`}>
         {todo.text}
       </span>
       <button

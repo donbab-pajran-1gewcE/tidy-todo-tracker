@@ -36,12 +36,12 @@ const TodoList: React.FC = () => {
           type="text"
           value={newTodo}
           onChange={(e) => setNewTodo(e.target.value)}
-          className="flex-grow px-3 py-2 border rounded-l-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+          className="flex-grow px-3 py-2 border rounded-l-md focus:outline-none focus:ring-2 focus:ring-custom-pink"
           placeholder="Add a new todo..."
         />
         <button
           onClick={addTodo}
-          className="bg-blue-500 text-white px-4 py-2 rounded-r-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 flex items-center"
+          className="bg-custom-pink text-white px-4 py-2 rounded-r-md hover:bg-custom-light-orange focus:outline-none focus:ring-2 focus:ring-custom-pink flex items-center"
         >
           <Plus size={20} />
         </button>
